@@ -46,3 +46,5 @@ info "Building box to '${PACKAGE}'..."
 info "Finished building '${PACKAGE}'!"
 log "Run \`sudo lxc-destroy -n ${CONTAINER}\` or \`make clean\` to remove the container that was created along the way"
 echo
+log "Run \`sudo vagrant box add --name davbfr/${DISTRIBUTION}_${RELEASE} --provider lxc -f ${PACKAGE}\` to install the box"
+echo

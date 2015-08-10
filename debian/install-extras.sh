@@ -15,6 +15,7 @@ log "Sleeping for $SECS seconds..."
 sleep $SECS
 
 PACKAGES=(vim curl wget man-db openssh-server bash-completion ca-certificates sudo)
+PACKAGES+=(molly-guard fail2ban screen htop language-pack-fr mc nano aptitude unattended-upgrades)
 
 log "Installing additional packages: ${ADDPACKAGES}"
 PACKAGES+=" ${ADDPACKAGES}"
