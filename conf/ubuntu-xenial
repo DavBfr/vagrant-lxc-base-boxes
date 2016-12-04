@@ -5,6 +5,8 @@
 # Common configuration
 lxc.include = /usr/share/lxc/config/ubuntu.common.conf
 
+lxc.mount.entry = /dev/pts dev/pts none bind,optional 0 0
+
 # settings for systemd with PID 1:
 lxc.kmsg = 0
 lxc.autodev = 1
