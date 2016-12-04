@@ -30,6 +30,8 @@ else
 fi
 cp conf/metadata.json ${WORKING_DIR}
 sed -i "s/<TODAY>/${NOW}/" ${WORKING_DIR}/metadata.json
+cp conf/Vagrantfile ${WORKING_DIR}
+sed -i "s/<NAME>/${DISTRIBUTION}_${RELEASE}/" ${WORKING_DIR}/Vagrantfile
 
 # Vagrant box!
 log 'Packaging box'
